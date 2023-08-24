@@ -1,0 +1,71 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animação CSS</title>
+
+<body>
+<div class="container">
+  <h2>Exemplo de Animação CSS</h2>
+  <div class="box"></div>
+  <p>Esta caixa está animando!</p>
+</div>
+</body>
+</html>
+
+
+css
+
+
+
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .box {
+    width: 100px;
+    height: 100px;
+    background-color: #007bff;
+    margin: 20px auto;
+    animation: bounce 1.5s ease-in-out infinite;
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-50px);
+    }
+  }
+
+
+
+
+
+
+Neste exemplo, utilizamos a animação bounce que faz uma caixa subir e descer. A classe .box define a cor da caixa e aplica a animação usando o nome da animação (bounce) e a duração
+(1.5 segundos). O @keyframes define os estágios da animação, especificando o comportamento da caixa em diferentes momentos. Neste caso, a caixa sobe 50 pixels e volta ao seu estado original.
+
+Sinta-se à vontade para experimentar diferentes animações, durações e propriedades para criar efeitos visuais interessantes.
+
+
+
+
